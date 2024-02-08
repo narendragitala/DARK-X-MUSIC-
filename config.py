@@ -12,7 +12,7 @@ API_HASH = getenv("API_HASH")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME","6422246093")
+OWNER_USERNAME = getenv("OWNER_USERNAME","@KATIL_ZAHAR")
 # Get Your bot username
 BOT_USERNAME = getenv("BOT_USERNAME" , "DaisyyMusixBot")
 # Don't Add style font 
@@ -29,7 +29,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 LOGGER_ID = int(getenv("LOGGER_ID", -1002017835000))
 
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6758921590))
+OWNER_ID = int(getenv("OWNER_ID", 6422246093))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -46,8 +46,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Kafiirana")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Kafiirana")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/LOVE_BIRDS_KI_DUNIYA")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/LOVE_BIRDS_KI_DUNIYA")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
