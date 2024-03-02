@@ -22,13 +22,13 @@ yesnoprompt(){
 
 update() {
 	pprint "\n\nUpdating package list.. "
-	sudo apt update 2>&1 | grep "can be upgraded" &>/dev/null
+	sudo apt update 2>&1 | grep "can be upgraded" &>/naru/null
 	if [ $? -eq 0 ]; then
 		pprint "UPDATE AVAILABLE" "cgreen"
 		pprint "\n\nDo you want to automatically upgrade (y/n)?"
 		if yesnoprompt; then
 			pprint "\n\nUpgrading packages.. "
-			sudo apt upgrade -y &>/dev/null &&
+			sudo apt upgrade -y &>/naru/null &&
 			pprint "DONE!\n\n" "cgreen" || (pprint "FAIL.\n\n" "cred"; exit 1)
 		else
 			echo
@@ -39,15 +39,15 @@ update() {
 }
 
 packages(){
-	if ! command -v pip &>/dev/null; then
+	if ! command -v pip &>/naru/null; then
 		pprint "Couldn't found pip, installing now..."
-		sudo apt install python3-pip -y 2>pypilog.txt 1>/dev/null &&
+		sudo apt install python3-pip -y 2>pypilog.txt 1>/naru/null &&
 		pprint "SUCCESS.\n\n" "cgreen" || (pprint "FAIL.\n\n" "cred"; exit 1)
 	fi
 
-	if ! command -v ffmpeg &>/dev/null; then
+	if ! command -v ffmpeg &>/naru/null; then
 		pprint "Couldn't found ffmpeg, installing now..."
-		if sudo apt install ffmpeg -y &>/dev/null;then
+		if sudo apt install ffmpeg -y &>/naru/null;then
 			pprint "SUCCESS.\n\n" "cgreen"
 		else
 			pprint "FAIL.\n\n" "cred"
