@@ -109,15 +109,8 @@ def time_to_seconds(time):
 
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
+ SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BROKENSHAYRI1")
 
-if SUPPORT_CHANNEL:
-    if not re.match("https://t.me/brokenshayri1", SUPPORT_CHANNEL):
-        raise SystemExit(
-            "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
-        )
 
 if SUPPORT_CHAT:
-    if not re.match("https://t.me/shayrigalibki", SUPPORT_CHAT):
-        raise SystemExit(
-            "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+   SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/SHAYRIGALIBKI")
