@@ -71,14 +71,14 @@ def stream_markup_timer(_, chat_id, played, dur):
 
                 text="💗ᴏᴡɴᴇʀ💗",
 
-                url=f"t.me/{OWNER_USERNAME}",
+                url=f"https://t.me/ROYAL_JAAT_302",
 
             ),
             InlineKeyboardButton(
 
                 text="💌 ɢʀᴏᴜᴘ",
 
-                url=f"{SUPPORT_CHAT}",
+                url=f"https://t.me/+M91kyPTVBxw3MTll",
 
             ),
         ],
@@ -101,14 +101,14 @@ def stream_markup(_, chat_id):
 
                 text="💗ᴏᴡɴᴇʀ💗",
 
-                url=f"t.me/{OWNER_USERNAME}",
+                url=f"https://t.me/ROYAL_JAAT_302",
 
             ),
             InlineKeyboardButton(
 
                 text="💌 ɢʀᴏᴜᴘ",
 
-                url=f"{SUPPORT_CHAT}",
+                url=f"https://t.me/+M91kyPTVBxw3MTll",
 
             ),
         ],
